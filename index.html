@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Platform Hesap — Yükü hesapla, güvenle kaldır.</title>
+<meta name="description" content="Platform Hesap: makaslı kaldırma platformları için ön boyutlandırma uygulaması. Yükü hesapla, güvenle kaldır.">
+<link rel="icon" href="icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600&family=Caveat:wght@700&family=Source+Serif+4:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--yellow:#F5C400;--bg:#FFF3C4;--card:#FFFBEA;--hot:#FFE07A;--ink:#26211C;--ink-soft:#4A3F12;--muted:#665D53;--rule:#E2D4A4;--ok:#2445A0;--warn:#C2411F;--night:#17130F}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 'Archivo',system-ui,sans-serif}
+a{color:var(--ok)}
+a:focus-visible{outline:3px solid var(--ok);outline-offset:2px;border-radius:4px}
+.wrap{max-width:760px;margin:0 auto;padding:0 16px}
+header{background:var(--yellow);border-bottom:1.5px solid var(--ink)}
+header .wrap{display:flex;align-items:center;gap:12px;min-height:72px}
+header img{width:44px;height:44px;border-radius:10px}
+header .brand{display:flex;flex-direction:column;text-decoration:none;color:var(--ink)}
+header .brand b{font:600 22px/1.1 'Source Serif 4',Georgia,serif}
+header .brand span{font-size:13px;font-weight:600;color:var(--ink-soft)}
+nav{margin-left:auto;display:flex;gap:4px;flex-wrap:wrap}
+nav a{color:var(--ink);text-decoration:none;font-weight:600;font-size:14px;padding:10px 10px;border-radius:22px;min-height:44px;display:inline-flex;align-items:center}
+nav a[aria-current=page]{background:var(--ink);color:var(--yellow)}
+main{padding:24px 0 40px}
+h1{font:600 34px/1.15 'Source Serif 4',Georgia,serif;margin:0 0 8px;letter-spacing:-.01em}
+h2{font:600 22px/1.25 'Source Serif 4',Georgia,serif;margin:0 0 6px}
+.card{background:var(--card);border-radius:18px;padding:20px;margin:16px 0;box-shadow:0 1px 2px rgba(90,70,0,.08),0 6px 16px -10px rgba(90,70,0,.25)}
+.hot{background:var(--hot)}
+.lead{font:400 19px/1.55 'Source Serif 4',Georgia,serif;margin:0}
+.muted{color:var(--muted);font-size:14px}
+.hero{display:grid;grid-template-columns:auto 1fr;gap:20px;align-items:center}
+.hero img{width:120px;height:120px;border-radius:26px;box-shadow:0 10px 24px -12px rgba(23,19,15,.6)}
+.slogan{font:700 26px/1.1 'Caveat',cursive;color:var(--ok);margin:4px 0 0}
+ul.feat{list-style:none;padding:0;margin:0;display:grid;gap:10px}
+ul.feat li{display:grid;grid-template-columns:28px 1fr;gap:10px}
+ul.feat li::before{content:"✓";width:26px;height:26px;border-radius:13px;background:var(--ok);color:var(--card);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:14px}
+.warn{border-left:4px solid var(--warn);padding-left:12px}
+section.legal h2{font-size:18px;margin-top:18px}
+section.legal p{margin:4px 0 0}
+footer{border-top:1px solid var(--rule);padding:20px 0 32px;color:var(--muted);font-size:14px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:8px 16px}
+@media (max-width:520px){.hero{grid-template-columns:1fr}.hero img{width:96px;height:96px}h1{font-size:28px}nav{margin-left:0}header .wrap{flex-wrap:wrap;padding:10px 16px}}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+<a class="brand" href="index.html"><b>Platform Hesap</b><span>Yükü hesapla, güvenle kaldır.</span></a>
+<nav aria-label="Sayfalar">
+<a href="index.html" aria-current="page">Tanıtım</a>
+<a href="gizlilik.html">Gizlilik</a>
+<a href="kosullar.html">Koşullar</a>
+</nav>
+</div></header>
+<main><div class="wrap">
+
+<div class="card hot hero">
+<img src="icon.png" alt="Platform Hesap uygulama ikonu" width="120" height="120">
+<div>
+<h1>Platform Hesap</h1>
+<p class="lead">Makaslı kaldırma platformları için telefonda ön boyutlandırma: makas profili, hidrolik, dayanım ve krom mil burkulması.</p>
+<p class="slogan">Yükü hesapla, güvenle kaldır.</p>
+</div>
+</div>
+<div class="card">
+<h2>Neler yapar?</h2>
+<ul class="feat">
+<li><span>Yük, platform boyu ve makas sayısından <b>makas profili</b>, makara ve strok önerir; yan görünüşü çizer.</span></li>
+<li><span><b>Hidrolik</b>: silindir çapı, basınç, pompa, debi, motor ve tank; EN 1570 kontrolleriyle.</span></li>
+<li><span><b>Dayanım</b>: makas, üst ve alt tabla emniyet katsayıları, makas narinliği.</span></li>
+<li><span><b>Krom mil burkulması</b>: diyagram, gereken çap, izin verilen kuvvet ve en uzun boy tabloları.</span></li>
+<li><span>Her sonuçta <b>“Nasıl hesaplandı?”</b>: formül ve yerine konmuş sayılar.</span></li>
+<li><span>Projeler yalnızca cihazınızda saklanır; hesap açmak gerekmez, reklam ve izleme yoktur.</span></li>
+</ul>
+</div>
+<div class="card warn">
+<h2>Önemli</h2>
+<p>Platform Hesap bir ön boyutlandırma ve bilgilendirme aracıdır. Sonuçlar mühendislik projesi, imalat onayı ya da CE uygunluğu yerine geçmez; her tasarım yetkin bir mühendis tarafından doğrulanmalıdır. Hesaplardaki tablolar ve kabuller uygulamanın kendisine aittir, herhangi bir firmanın verisi değildir.</p>
+<p class="muted">Ayrıntılar: <a href="kosullar.html">Kullanım koşulları</a> · <a href="gizlilik.html">Gizlilik politikası</a></p>
+</div>
+<div class="card">
+<h2>İletişim</h2>
+<p>Soru, öneri ve tasarım talepleri için: <a href="mailto:lemon.flickss@gmail.com">lemon.flickss@gmail.com</a></p>
+</div>
+
+</div></main>
+<footer><div class="wrap">
+<span>© 2026 Platform Hesap</span>
+<a href="gizlilik.html">Gizlilik politikası</a>
+<a href="kosullar.html">Kullanım koşulları</a>
+<a href="mailto:lemon.flickss@gmail.com">lemon.flickss@gmail.com</a>
+</div></footer>
+</body>
+</html>
